@@ -1,0 +1,21 @@
+@import '../../settings';
+
+li.task-item{
+    background-color: white;
+    padding: $gap;
+    border-radius: $card-border-radius;
+    box-shadow: 0 1px 1px rgb(155, 154, 154);
+
+    &:not(:last-child){
+        margin-bottom: $gap;
+    }  
+
+    img{
+        display: block;
+        width: calc(100% + 2 * #{$gap});
+        margin: -$gap 0 $gap (-$gap);
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+    }
+
+}
