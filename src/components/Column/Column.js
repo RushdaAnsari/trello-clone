@@ -1,24 +1,24 @@
 import './Column.scss';
-import Task from '../Task/Task';
+import Card from '../Card/Card';
 
 const Column = () => {
     return (
         <>
             <div class="column">
                 <header>Brainstrom</header>
-                <ul className='task-list'>
-                    <Task/>
+                <ul className='card-list'>
+                    <Card/>
 
-                    <li className='task-item'>Second</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Second</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
-                    <li className='task-item'>Third</li>
+                    <li className='card-item'>Second</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Second</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
+                    <li className='card-item'>Third</li>
                 </ul>
                 <footer>Add another card</footer>
             </div>
