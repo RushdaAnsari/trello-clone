@@ -35,6 +35,21 @@ const BoardContent = () => {
         setBoard(newBoard);
     }
 
+    
+    const onCardDrop = (dropResult, columnId) => {
+        if(dropResult.removedIndex !== null || dropResult.addedIndex !== null){
+            
+
+            let newColumns = [...columns];
+
+            let currentColumn = newColumns.find(column => column.id === columnId);
+            currentColumn.cards = applyDrag(currentColumn.cards, dropResult);
+            currentColumn.cardOrder = currentColumn.cards.map(card => card.id);
+
+            setColumns(newColumns);
+        }
+    }
+
     if(_.isEmpty(board)){
         return (
             <>
@@ -63,10 +78,17 @@ const BoardContent = () => {
                             <Draggable key={column.id}>
                             <Column 
                                 column={column}
+                                onCardDrop={onCardDrop}
                             />
                             </Draggable>
                         )
                     })}
+
+                    <div className='add-new-column'>
+                        <i className='fa fa-plus icon'>Add another column</i>
+                    </div>
+
+
                 </Container>    
                 
             </div>

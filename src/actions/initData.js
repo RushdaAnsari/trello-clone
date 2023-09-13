@@ -14,70 +14,49 @@ export const initData = {
                             id: 'card-1', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 1',
                             image: './img-design.png'
                         },
                         {
                             id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 2',
                             image: null
                         },
                         {
                             id: 'card-3', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 3',
                             image: null
                         },
                         {
                             id: 'card-4', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 4',
                             image: null
                         },
                         {
                             id: 'card-5', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 5',
                             image: null
                         },
                         {
                             id: 'card-6', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 6',
                             image: null
                         },
                         {
                             id: 'card-7', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
-                            image: null
-                        },
-                        {
-                            id: 'card-7', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card',
-                            image: null
-                        },
-                        {
-                            id: 'card-7', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card',
-                            image: null
-                        },
-                        {
-                            id: 'card-7', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 7',
                             image: null
                         },
                         
@@ -93,21 +72,21 @@ export const initData = {
                             id: 'card-8', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 8',
                             image: null
                         },
                         {
                             id: 'card-9', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 9',
                             image: null
                         },
                         {
                             id: 'card-10', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 10',
                             image: null
                         },
                     ]
@@ -122,21 +101,21 @@ export const initData = {
                             id: 'card-11', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 11',
                             image: null
                         },
                         {
                             id: 'card-12', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 12',
                             image: null
                         },
                         {
                             id: 'card-13', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card',
+                            title: 'Title of card 13',
                             image: null
                         },
                     ]

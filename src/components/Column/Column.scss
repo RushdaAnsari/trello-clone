@@ -32,6 +32,15 @@
         line-height: $column-footer-height;
         border-bottom-left-radius: $column-border-radius;
         border-bottom-right-radius: $column-border-radius;
+        color: #6c6c6c;
+
+        .footer-action{
+            margin-left: 5px;
+            cursor: pointer;
+            &:hover {
+                color: #333;
+            }
+        }
     }
 
     div.card-list{
@@ -58,6 +67,7 @@
         .card-ghost {
             transition: transform 0.18s ease;
             transform: rotateZ(5deg);
+            font-weight: bold;
         }
 
         .card-ghost-drop{
