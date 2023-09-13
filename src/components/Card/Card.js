@@ -1,11 +1,17 @@
 import './Card.scss';
 
-const Card = () => {
+const Card = (props) => {
+    const {card} = props;
+
+
     return (
         <>
             <li className='card-item'>
-                <img src='./img-design.png'/>
-                Design & Research
+                {card.image &&
+                    <img className='card-cover' src={card.image}/>
+                
+                }
+                {card.title}
             </li>
         </>
     )
