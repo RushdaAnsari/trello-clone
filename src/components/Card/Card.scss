@@ -1,14 +1,13 @@
 @import '../../settings';
 
-li.card-item{
+div.card-item{
     background-color: white;
     padding: $gap;
     border-radius: $card-border-radius;
     box-shadow: 0 1px 1px rgb(155, 154, 154);
-
-    &:not(:last-child){
-        margin-bottom: $gap;
-    }  
+    cursor: pointer;
+    margin-bottom: $gap;
+    
 
     img{
         display: block;

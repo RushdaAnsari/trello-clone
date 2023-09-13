@@ -3,7 +3,7 @@
 
 .board-columns{
     display: flex;
-    margin: 0 $gap $gap;
+    margin: 0 $gap $gap 0;
     overflow: auto;
     gap: 10px;
 
@@ -21,4 +21,10 @@
         border-radius: 8px;
         background-clip: padding-box;
     }   
+
+    .column-drop-preview {
+        background-color: rgba(105, 105, 189, 0.1);
+        border: 1px dashed #abc;
+        margin: 5px 45px 5px 5px;
+      }
 }

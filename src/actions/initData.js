@@ -59,6 +59,27 @@ export const initData = {
                             title: 'Title of card',
                             image: null
                         },
+                        {
+                            id: 'card-7', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card',
+                            image: null
+                        },
+                        {
+                            id: 'card-7', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card',
+                            image: null
+                        },
+                        {
+                            id: 'card-7', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card',
+                            image: null
+                        },
                         
                     ]
                 },
