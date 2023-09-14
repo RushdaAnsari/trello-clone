@@ -30,7 +30,7 @@
 
     .add-new-column{
         width: 250px;
-        height: 32px;
+        // height: 32px;
         line-height: 32px;
         padding: 4px 0 4px 15px;
         cursor: pointer;
@@ -44,4 +44,28 @@
             background-color: hsla(171, 71%, 21%, 0.34);
         }
     }
+
+    .content-add-column{
+        width: 250px;
+        padding: 5px;
+        margin-left: 10px;
+        background-color: hsla(171, 71%, 21%, 0.24);
+        border-radius: $card-border-radius;
+
+
+        .group-btn{
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+
+            i{
+                font-size: 31px;
+                padding-left: 8px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    
 }
