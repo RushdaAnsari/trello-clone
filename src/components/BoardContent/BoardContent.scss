@@ -3,9 +3,10 @@
 
 .board-columns{
     display: flex;
-    margin: 0 $gap $gap 0;
+    margin: 0 $gap $gap;
     overflow: auto;
     gap: 10px;
+    
 
     &::-webkit-scrollbar{
         -webkit-appearance: none;
@@ -15,9 +16,12 @@
         height: 6px;
     }
 
+    &::-webkit-scrollbar:vertical{
+        width: 6px;
+    } 
+
     &::-webkit-scrollbar-thumb{
         background-color: rgba(255, 255, 255, 0.70);
-        border-radius: 3px solid $list-bg-color;
         border-radius: 8px;
         background-clip: padding-box;
     }   
@@ -30,7 +34,7 @@
 
     .add-new-column{
         width: 250px;
-        // height: 32px;
+        height: 32px;
         line-height: 32px;
         padding: 4px 0 4px 15px;
         cursor: pointer;
@@ -66,6 +70,6 @@
 
         }
     }
-
-    
 }
+    
+

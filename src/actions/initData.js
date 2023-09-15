@@ -2,7 +2,7 @@ export const initData = {
     boards: [
         {
             id: 'board-1',
-            columnOrder: ['column-1', 'column-2', 'column-3'],
+            columnOrder: ['column-1', 'column-2', 'column-3', 'column-4'],
             columns: [
                 {
                     id: 'column-1',
@@ -102,7 +102,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: 'Title of card 11',
-                            image: null
+                            image: './img-design.png'
                         },
                         {
                             id: 'card-12', 
@@ -119,7 +119,37 @@ export const initData = {
                             image: null
                         },
                     ]
+                },
+                {
+                    id: 'column-4',
+                    boardId: 'board-1',
+                    title: 'Todo-4',
+                    cardOrder: ['card-14', 'card-15', 'card-16'],
+                    cards: [
+                        {
+                            id: 'card-14', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card 14',
+                            image: null
+                        },
+                        {
+                            id: 'card-15', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card 15',
+                            image: null
+                        },
+                        {
+                            id: 'card-16', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'Title of card 16',
+                            image: null
+                        },
+                    ]
                 }
+                
 
             ]
         }

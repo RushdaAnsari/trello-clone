@@ -4,15 +4,14 @@
 .column{
     flex: 0 0 auto;
     width: 300px;
-    // height: calc(100% - #{$gap});
-    height: calc(100vh - 40px - 50px - #{$gap});
+    height: calc(100% - #{$gap});
     margin-left: $gap;
     
 
     > * {
         background-color: #ebecf0;
         color: #333;
-        padding: 0 8px;
+        padding: 0 10px;
     }
 
     header{
@@ -24,6 +23,47 @@
         border-top-left-radius: $column-border-radius;
         border-top-right-radius: $column-border-radius;
         cursor: pointer;
+    }
+
+    .column-drag-handle{
+        display: flex;
+        padding-right: 3px;
+        padding-top: 5px;
+        padding-left: 10px;
+        align-items: center;
+
+        .column-title{
+            width: 90%;
+        }
+
+        .column-dropdown{
+            width: 10%;
+            text-align: center;
+            
+
+            .dropdown-toggle{
+                margin-bottom: 4px;
+                height: 30px;
+            }
+
+            .dropdown-toggle{
+                &::after{
+                    content: '...';
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+
+                }
+                &:hover{
+                    background-color: #091e4214;
+                }
+
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
     }
 
     footer{
@@ -47,22 +87,7 @@
         list-style-type: none;
         margin: 0;
         max-height: calc(100% - #{$column-header-height - #{$column-footer-height}});
-        overflow-y: auto;
-
-        &::-webkit-scrollbar{
-            -webkit-appearance: none;
-        }
-
-        &::-webkit-scrollbar:vertical{
-            width: 11px;
-        }
-
-        &::-webkit-scrollbar-thumb{
-            background-color: darken($color: $list-bg-color, $amount: 15);
-            border: 3px solid transparent;
-            border-radius: 8px;
-            background-clip: padding-box;
-        }
+        // overflow-y: auto;
 
         .card-ghost {
             transition: transform 0.18s ease;

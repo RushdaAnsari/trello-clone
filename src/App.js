@@ -4,7 +4,7 @@ import BoardContent from "./components/BoardContent/BoardContent";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container mw-100">
       <AppBar />
       <BoardBar />
       <BoardContent />
