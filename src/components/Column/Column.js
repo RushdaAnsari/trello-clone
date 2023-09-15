@@ -5,6 +5,7 @@ import { Container, Draggable } from 'react-smooth-dnd';
 import Dropdown from 'react-bootstrap/Dropdown'
 import ConfirmModal from '../Common/ConfirmModal';
 import Form from 'react-bootstrap/Form';
+import { v4 as uuidv4 } from 'uuid';
 
 import { useEffect, useState, useRef } from 'react';
 import { MODAL_ACTION_CLOSE, MODAL_ACTION_CONFIRM} from '../../utilities/constant';
@@ -21,6 +22,17 @@ const Column = (props) => {
     const [isFirstClick, setFirstClick] = useState(true);
 
     const inputRef = useRef(null);
+
+    const [isShowAddNewCard, setIsShowAddNewCard] = useState(false);
+    const [valueTextArea, setValueTextArea] = useState('');
+    const textAreaRef = useRef(null);
+
+    useEffect(() => {
+        if(isShowAddNewCard === true && textAreaRef && textAreaRef.current){
+            textAreaRef.current.focus();
+        }
+    }, [isShowAddNewCard])
+
 
     useEffect(() => {
         if(column && column.title) {
@@ -67,6 +79,27 @@ const Column = (props) => {
         onUpdateColumn(newColumn)
     }
         
+    const handleAddNewCard = () => {
+        if(!valueTextArea) {
+            textAreaRef.current.focus();
+            return;
+        }
+
+        const newCard = {
+            id: uuidv4(),
+            boardId: column.boardId,
+            columnId: column.id,
+            title: valueTextArea,
+            image: null
+        }
+        let newColumn = {...column};
+        newColumn.cards = [...newColumn.cards, newCard];
+        newColumn.cardOrder = newColumn.cards.map(card => card.id);
+
+        onUpdateColumn(newColumn);
+        setValueTextArea('');
+        setIsShowAddNewCard(false);
+    }
     return (
         <>
             <div class="column">
@@ -120,14 +153,43 @@ const Column = (props) => {
                                 </Draggable>
                             )
                         })}
+                
+                     </Container>
 
-                    </Container>
-                </div>
-                <footer>
-                    <div className='footer-action'>
-                        <i className='fa fa-plus icon'></i> Add another card
+                {isShowAddNewCard === true && 
+                    <div className='add-new-card'>
+                        <textarea
+                            type='text' 
+                            className='form-control' 
+                            rows='2'
+                            placeholder='Enter card title...'
+                            spellCheck="false"
+                            ref={textAreaRef}
+                            value={valueTextArea}
+                            onChange={(e) => setValueTextArea(e.target.value)}
+                        >
+                        </textarea>
+                        <div className='group-btn'>
+                            <button 
+                            className='btn btn-primary'
+                            onClick={() => handleAddNewCard()}
+                            >Add card</button>
+                            <i className='fa fa-times icon'onClick={() => setIsShowAddNewCard(false)}></i>
+                        </div>
                     </div>
-                </footer>
+                }
+                </div> 
+
+                {isShowAddNewCard === false && 
+                    <footer>
+                        <div className='footer-action' onClick={() => setIsShowAddNewCard(true)}>
+                            <i 
+                            className='fa fa-plus icon' 
+                            >
+                            </i> Add another card
+                        </div>
+                    </footer>
+                }
             </div>
             <ConfirmModal
                 show={isShowModalDelete}

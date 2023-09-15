@@ -66,6 +66,23 @@
         }
     }
 
+    .add-new-card{
+        padding-bottom:  10px;
+        .group-btn{
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+
+            i{
+                font-size: 31px;
+                padding-left: 8px;
+                cursor: pointer;
+                color: #b3b3b3b3
+            }
+
+        }
+    }
+
     footer{
         padding-left: 10px;
         height: $column-footer-height;

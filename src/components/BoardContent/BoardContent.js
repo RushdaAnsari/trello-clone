@@ -161,6 +161,7 @@ const BoardContent = () => {
                             </Draggable>
                         )
                     })}
+                </Container>    
 
                     {isShowAddList === false ?
                         <div className='add-new-column' onClick={() => setIsShowAddList(true)}>
@@ -186,7 +187,7 @@ const BoardContent = () => {
                         </div>
 
                     }   
-                </Container>    
+                
                 
             </div>
         
