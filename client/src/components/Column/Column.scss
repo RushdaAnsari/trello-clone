@@ -3,7 +3,7 @@
 
 .column{
     flex: 0 0 auto;
-    width: 300px;
+    width: 320px;
     height: calc(100% - #{$gap});
     margin-left: 12px;
     border: 2px solid #fc6c85a8;
@@ -136,7 +136,7 @@
         }
     
         &::-webkit-scrollbar:vertical{
-            width: 8px;
+            width: 4px;
         }
     
         &::-webkit-scrollbar-thumb{

@@ -21,63 +21,7 @@ export const initData = {
                             id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
-                            image: ''
-                        },
-                        {
-                            id: 'card-2', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'hi',
+                            title: 'Create your first task...',
                             image: ''
                         },
                         
