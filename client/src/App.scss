@@ -1,13 +1,15 @@
 @import './settings';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@700&family=Ubuntu:wght@400;500&display=swap');
-
+@import './components/Column/Column.scss';
+@import './components/AppBar/AppBar.scss';
+@import './components/BoardBar/BoardBar.scss';
 
 body {
     margin: 0;
     line-height: 1.3em;
     font-size: 14px;
     height: 100%;
-    background: url('../public/background.jpg') no-repeat center center fixed; 
+    background: url('../public/background.jpg') no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,3 +62,52 @@ body {
 
 }
 
+
+@media (max-width: 768px){
+    body{
+        overflow-x: auto;
+        overflow-y: hidden;
+        background: url('../public/background.jpg') no-repeat center center fixed; 
+        
+    }
+    // .container{
+        
+    // }
+    
+    .navbar-app, .navbar-board{
+        width: 100%;
+        position: fixed;
+        
+    }
+    .board-columns{
+        display: grid;
+        overflow-x: auto;
+
+
+        &::-webkit-scrollbar{
+            -webkit-appearance: none;
+            
+        }
+    
+        &::-webkit-scrollbar:horizontal{
+            height: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            background-color: rgba(255, 255, 255, 0.70);
+            border-radius: 2px;
+            background-clip: padding-box;
+        }   
+    }
+    .column{
+        width: 300px;
+        
+
+        div.card-list{
+            overflow-y: auto;
+            max-height: 380px;
+        }
+    }
+    
+    
+}
