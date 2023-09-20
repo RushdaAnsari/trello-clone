@@ -13,18 +13,18 @@ const BoardContent = () => {
     const [board, setBoard] = useState({});
     const [columns, setColumns] = useState([]);
 
-    const [isShowAddList, setIsShowAddList] = useState(false);
+    const [isShowAddBoard, setIsShowAddBoard] = useState(false);
     const inputRef = useRef(null);
     const [valueInput, setValueInput] = useState("");
 
     useEffect(() => {
         // check if add list button is pressed check if there is input by user
-        if(isShowAddList === true && inputRef && inputRef.current){
+        if(isShowAddBoard === true && inputRef && inputRef.current){
             // highlight input box
             inputRef.current.focus();
         }
-        // It specifies that this effect should only run when the value of isShowAddList changes.
-    }, [isShowAddList])
+        // It specifies that this effect should only run when the value of isShowAddBoard changes.
+    }, [isShowAddBoard])
 
 
     useEffect(() => {
@@ -90,6 +90,14 @@ const BoardContent = () => {
         }
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter' && !event.shiftKey){
+            event.preventDefault(); // Prevent the default Enter behavior (newline)
+            handleAddBoard();
+        }
+
+    }
+
     if(_.isEmpty(board)){
         return (
             <>
@@ -98,7 +106,7 @@ const BoardContent = () => {
         )
     }
 
-    const handleAddList = () => {
+    const handleAddBoard = () => {
         // If valueInput is empty, this block of code checks if inputRef exists and if its current property is defined
         if(!valueInput){
             if(inputRef && inputRef.current)
@@ -163,9 +171,10 @@ const BoardContent = () => {
                     })}
                 </Container>    
 
-                    {isShowAddList === false ?
-                        <div className='add-new-column' onClick={() => setIsShowAddList(true)}>
-                            <i className='fa fa-plus icon'></i>Add another column
+                    {isShowAddBoard === false ?
+                        <div className='add-new-column' onClick={() => setIsShowAddBoard(true)}>
+                            <i className='fa fa-plus icon'>
+                            </i>Create New Board
                         </div>
                         :
                     
@@ -175,14 +184,17 @@ const BoardContent = () => {
                                 className='form-control' 
                                 ref={inputRef}
                                 value={valueInput}
+                                spellCheck='false'
+                                placeholder='Enter Board Title...'
+                                onKeyDown={handleKeyDown}
                                 onChange={(event) => setValueInput(event.target.value)}
                                 />
                             <div className='group-btn'>
                                 <button className='btn btn-success' 
-                                onClick={() => handleAddList()}
-                                >Add list</button>
+                                onClick={() => handleAddBoard()}
+                                >Create Board</button>
                                 <i className='fa fa-times icon' 
-                                onClick={() => setIsShowAddList(false)}></i>
+                                onClick={() => setIsShowAddBoard(false)}></i>
                             </div>
                         </div>
 

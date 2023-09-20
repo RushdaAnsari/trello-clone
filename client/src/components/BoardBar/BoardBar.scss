@@ -1,9 +1,18 @@
 @import '../../settings';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@700&family=Ubuntu:wght@400;500&display=swap');
+
 
 .navbar-board{
-    padding-left: $gap;
+    padding: 12px;
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
-    background-color: $navbar-board-bg-color;
+    font-size: 1.3rem;
+    background-color: $navbar-dashboard-bg-color;
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
 }

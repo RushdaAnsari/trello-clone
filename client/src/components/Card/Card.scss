@@ -1,6 +1,8 @@
 @import '../../settings';
 
 div.card-item{
+    display: grid;
+    grid-template-columns: 90% 10%;
     background-color: white;
     padding: $gap;
     border-radius: $card-border-radius;
@@ -12,9 +14,25 @@ div.card-item{
     img{
         display: block;
         width: calc(100% + 2 * #{$gap});
-        margin: -$gap 0 $gap (-$gap);
+        height: 120px;
+        // margin: -$gap 0 $gap (-$gap);
         border-top-left-radius: $card-border-radius;
         border-top-right-radius: $card-border-radius;
     }
+
+    .card-delete-btn{
+        font-size: 10px;
+        
+
+        button{
+            padding: 0;
+            
+        }
+        
+    }
+
+        
+    
+
 
 }

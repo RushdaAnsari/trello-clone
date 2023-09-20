@@ -7,57 +7,78 @@ export const initData = {
                 {
                     id: 'column-1',
                     boardId: 'board-1',
-                    title: 'Todo-1',
+                    title: 'To Do',
                     cardOrder: ['card-1', 'card-2', 'card-3', 'card-4', 'card-5', 'card-6', 'card-7'],
                     cards: [
                         {
                             id: 'card-1', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 1',
-                            image: './img-design.png'
+                            title: '',
+                            image: './Capture.jpg'
                         },
                         {
                             id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 2',
-                            image: null
+                            title: 'hi',
+                            image: ''
                         },
                         {
-                            id: 'card-3', 
+                            id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 3',
-                            image: null
+                            title: 'hi',
+                            image: ''
                         },
                         {
-                            id: 'card-4', 
+                            id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 4',
-                            image: null
+                            title: 'hi',
+                            image: ''
                         },
                         {
-                            id: 'card-5', 
+                            id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 5',
-                            image: null
+                            title: 'hi',
+                            image: ''
                         },
                         {
-                            id: 'card-6', 
+                            id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 6',
-                            image: null
+                            title: 'hi',
+                            image: ''
                         },
                         {
-                            id: 'card-7', 
+                            id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 7',
-                            image: null
+                            title: 'hi',
+                            image: ''
+                        },
+                        {
+                            id: 'card-2', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'hi',
+                            image: ''
+                        },
+                        {
+                            id: 'card-2', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'hi',
+                            image: ''
+                        },
+                        {
+                            id: 'card-2', 
+                            boardId: 'board',
+                            columnId: 'column',
+                            title: 'hi',
+                            image: ''
                         },
                         
                     ]
@@ -65,90 +86,36 @@ export const initData = {
                 {
                     id: 'column-2',
                     boardId: 'board-1',
-                    title: 'Todo-2',
+                    title: 'In Progress',
                     cardOrder: ['card-8', 'card-9', 'card-10'],
                     cards: [
                         {
                             id: 'card-8', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 8',
-                            image: null
+                            title: '',
+                            image: 'mail.jpg'
                         },
-                        {
-                            id: 'card-9', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 9',
-                            image: null
-                        },
-                        {
-                            id: 'card-10', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 10',
-                            image: null
-                        },
+                        
                     ]
                 },
                 {
                     id: 'column-3',
                     boardId: 'board-1',
-                    title: 'Todo-3',
+                    title: 'Completed',
                     cardOrder: ['card-11', 'card-12', 'card-13'],
                     cards: [
                         {
                             id: 'card-11', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Title of card 11',
-                            image: './img-design.png'
+                            title: '',
+                            image: 'calender.jpg'
                         },
-                        {
-                            id: 'card-12', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 12',
-                            image: null
-                        },
-                        {
-                            id: 'card-13', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 13',
-                            image: null
-                        },
+                        
                     ]
                 },
-                {
-                    id: 'column-4',
-                    boardId: 'board-1',
-                    title: 'Todo-4',
-                    cardOrder: ['card-14', 'card-15', 'card-16'],
-                    cards: [
-                        {
-                            id: 'card-14', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 14',
-                            image: null
-                        },
-                        {
-                            id: 'card-15', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 15',
-                            image: null
-                        },
-                        {
-                            id: 'card-16', 
-                            boardId: 'board',
-                            columnId: 'column',
-                            title: 'Title of card 16',
-                            image: null
-                        },
-                    ]
-                }
+                
                 
 
             ]

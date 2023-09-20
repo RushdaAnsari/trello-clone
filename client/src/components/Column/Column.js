@@ -7,6 +7,7 @@ import ConfirmModal from '../Common/ConfirmModal';
 import Form from 'react-bootstrap/Form';
 import { v4 as uuidv4 } from 'uuid';
 
+
 import { useEffect, useState, useRef } from 'react';
 import { MODAL_ACTION_CLOSE, MODAL_ACTION_CONFIRM} from '../../utilities/constant';
 
@@ -100,6 +101,30 @@ const Column = (props) => {
         setValueTextArea('');
         setIsShowAddNewCard(false);
     }
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter' && !event.shiftKey){
+            event.preventDefault(); // Prevent the default Enter behavior (newline)
+            handleAddNewCard();
+        }
+
+    }
+
+    const handleDeleteCard = (cardToDelete) => {
+        // Filter out the card to delete from the column's cards
+        const updatedCards = column.cards.filter((card) => card.id !== cardToDelete.id);
+      
+        const newColumn = {
+          ...column,
+          cards: updatedCards,
+        };
+      
+        onUpdateColumn(newColumn);
+      };
+
+
+
+
     return (
         <>
             <div class="column">
@@ -124,9 +149,9 @@ const Column = (props) => {
                             <Dropdown.Toggle variant="" id="dropdown-basic" size='sm'></Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#">Add card...</Dropdown.Item>
-                                <Dropdown.Item onClick={toggleModal}>Remove this column...</Dropdown.Item>
-                                <Dropdown.Item href="#">Something else</Dropdown.Item>
+                                {/* <Dropdown.Item href="#">Add card...</Dropdown.Item> */}
+                                <Dropdown.Item onClick={toggleModal}>Delete Board</Dropdown.Item>
+                                {/* <Dropdown.Item href="#">Something else</Dropdown.Item> */}
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
@@ -149,11 +174,10 @@ const Column = (props) => {
                         {cards && cards.length > 0 && cards.map((card, index) => {
                             return (
                                 <Draggable key={card.id}>
-                                    <Card card={card}/>
+                                    <Card card={card} onDeleteCard={handleDeleteCard}/>
                                 </Draggable>
                             )
                         })}
-                
                      </Container>
 
                 {isShowAddNewCard === true && 
@@ -161,32 +185,38 @@ const Column = (props) => {
                         <textarea
                             type='text' 
                             className='form-control' 
-                            rows='2'
+                            rows='1'
                             placeholder='Enter card title...'
                             spellCheck="false"
                             ref={textAreaRef}
                             value={valueTextArea}
                             onChange={(e) => setValueTextArea(e.target.value)}
+                            onKeyDown={handleKeyDown}
                         >
                         </textarea>
                         <div className='group-btn'>
                             <button 
-                            className='btn btn-primary'
+                            className='btn btn-success'
                             onClick={() => handleAddNewCard()}
-                            >Add card</button>
-                            <i className='fa fa-times icon'onClick={() => setIsShowAddNewCard(false)}></i>
+
+                            > Add Task</button>
+                            <i className='fa fa-times icon'
+                            onClick={() => setIsShowAddNewCard(false)}
+                            >
+                            </i>
                         </div>
-                    </div>
+                    </div>   
                 }
                 </div> 
 
                 {isShowAddNewCard === false && 
                     <footer>
+                       
                         <div className='footer-action' onClick={() => setIsShowAddNewCard(true)}>
                             <i 
                             className='fa fa-plus icon' 
                             >
-                            </i> Add another card
+                            </i>Create New Task
                         </div>
                     </footer>
                 }
@@ -201,4 +231,6 @@ const Column = (props) => {
     )
 }
 
+
 export default Column;
+

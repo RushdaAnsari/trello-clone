@@ -1,19 +1,45 @@
 @import './settings';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@700&family=Ubuntu:wght@400;500&display=swap');
+
 
 body {
     margin: 0;
     line-height: 1.3em;
     font-size: 14px;
-}
+    height: 100%;
+    background: url('../public/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+   
+
+    &::-webkit-scrollbar{
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:horizontal{
+        height: 8px;
+        background-color: black;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: $watermelon;
+        border-radius: 8px;
+        background-clip: padding-box;
+    }  
+}    
+
 
 .container{
     height: 100vh;
     display: grid;
     grid-template-rows: 40px 50px 1fr;
-    background-color: $board-bg-color;
     color: $app-main-color;
-    overflow-y: auto;
-
+    font-family: 'Roboto Slab', sans-serif;
+    
     .icon{
         font-size: 14px;
         margin-right: 3px;
@@ -21,11 +47,14 @@ body {
     .customize-input-column{
         border: none;
         cursor: pointer;
+        background-color: #FC6C85;
+        color: white;
+
         &:focus{
             outline: none;
             box-shadow: none;
         }
-        background-color: inherit;
+        
     }
 
 
