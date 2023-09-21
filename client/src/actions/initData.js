@@ -38,7 +38,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'mail.jpg'
+                            image: './mail.jpg'
                         },
                         
                     ]
@@ -54,7 +54,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'calender.jpg'
+                            image: './calender.jpg'
                         },
                         
                     ]
