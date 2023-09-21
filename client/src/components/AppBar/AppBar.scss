@@ -5,15 +5,20 @@
 .navbar-app{
     display: flex;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     background-color: $navbar-title-bg-color;
     color: white;
     font-weight: bold;
     font-family: 'Roboto Slab', sans-serif;
-    padding: 12px;
+    padding: 6px;
     position: fixed;
     width: 100%;
-    z-index: 10;
-   
     
+    
+}
+
+.logo{
+    width: 40px;
+    height: auto;
+    padding: 3px;
 }

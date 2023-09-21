@@ -3,16 +3,24 @@
 
 
 .navbar-board{
-    padding: 12px;
+    padding: 8px;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     background-color: $navbar-dashboard-bg-color;
     color: white;
-    margin-bottom: 5px;
     font-family: 'Roboto Slab', sans-serif;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    margin-top: 9px;
+
     
+}
+
+.dashboard-logo{
+    width: 22px;
+    height: auto;
+    margin-right: 14px;
+    margin-left: 4px;
+   
 }

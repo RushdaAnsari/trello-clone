@@ -3,15 +3,13 @@
 
 .column{
     flex: 0 0 auto;
-    width: 320px;
+    width: 280px;
     height: calc(100% - #{$gap});
     margin-left: 12px;
     border: 2px solid #fc6c85a8;
     border-radius: 6px;
     box-shadow: -1px 5px 8px 2px #BDBDBD;
     margin-top: 10px;
-    
-   
 
     > * {
         background-color: $column-background-color;
@@ -43,8 +41,6 @@
         .column-dropdown{
             width: 10%;
             text-align: center;
-            
-            
 
             .dropdown-toggle{
                 margin-bottom: 4px;
@@ -88,7 +84,7 @@
                 font-size: 15px;
                 padding-left: 8px;
                 cursor: pointer;
-                color: #333;
+                
             }
 
             .success {
@@ -128,7 +124,7 @@
     div.card-list{
         list-style-type: none;
         margin: 0;
-        max-height: 500px;
+        max-height: 60vh;
         overflow-y: auto;
 
         &::-webkit-scrollbar{
