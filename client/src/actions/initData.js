@@ -15,7 +15,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: './Capture.jpg'
+                            image: './capture.jpg'
                         },
                         {
                             id: 'card-2', 
