@@ -186,7 +186,7 @@ const Column = (props) => {
                             type='text' 
                             className='form-control' 
                             rows='1'
-                            placeholder='Enter card title...'
+                            placeholder='Enter task...'
                             spellCheck="false"
                             ref={textAreaRef}
                             value={valueTextArea}

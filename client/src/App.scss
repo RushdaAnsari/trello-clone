@@ -83,7 +83,7 @@ body {
 
     .board-columns{
         display: grid;
-        grid-template-rows: 40px auto 0.2fr;
+        grid-template-rows: 75px auto 0.2fr;
         overflow-x: auto;
 
 
@@ -110,20 +110,21 @@ body {
             text-align: center; 
         }   
         .content-add-column input{
-            display: flex;
-            height: 35px;
+            height: 30px;
         }
         .group-btn button{
-            background-color: #198754;   
+            background-color: #198754; 
+            
+            
             }
         .group-btn i{
-                    color: black; 
+            color: white; 
         } 
         
     }
     
     .column{
-        width: 280px;
+        width: 250px;
 
         div.card-list{
             overflow-y: auto;
