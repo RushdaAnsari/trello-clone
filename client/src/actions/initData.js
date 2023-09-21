@@ -1,3 +1,5 @@
+import mail from  '../assets/mail.jpg';
+
 export const initData = {
     boards: [
         {
@@ -38,7 +40,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'mail.jpg'
+                            image: {mail}
                         },
                         
                     ]
