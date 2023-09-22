@@ -1,6 +1,6 @@
 import './BoardContent.scss';
 import Column from '../Column/Column';
-import { initData } from '../../actions/initData';
+import { initData } from '../actions/initData';
 import { useState, useEffect, useRef } from 'react';
 import _ from 'lodash';
 import { mapOrder } from '../../utilities/sorts';

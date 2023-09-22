@@ -15,7 +15,9 @@ const Card = (props) => {
             <div className='card-item'>
 
                 {card.image &&
-                    <img className='card-cover' src={card.image}
+                    <img className='card-cover' 
+                    src={card.image} 
+                    style={{width: '120px', transform: 'translate(50px, 0%)', height: 'auto'}}
                         onMouseDown={event => event.preventDefault()}
                     />
                 }

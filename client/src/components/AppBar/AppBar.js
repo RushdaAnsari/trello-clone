@@ -1,6 +1,6 @@
 import  React from 'react';
 import './AppBar.scss';
-import logo from '../../assets/logo.png';
+import logo from '../assets/logo.png';
 
 const AppBar = () => {
     return (

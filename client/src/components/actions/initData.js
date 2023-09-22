@@ -1,4 +1,3 @@
-import mail from  '../assets/mail.jpg';
 
 export const initData = {
     boards: [
@@ -17,7 +16,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'capture.jpg'
+                            image: 'https://www.pinclipart.com/picdir/big/553-5532290_calender-clip-art.png'
                         },
                         {
                             id: 'card-2', 
@@ -40,7 +39,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: {mail}
+                            image: 'https://www.pinclipart.com/picdir/big/573-5733082_youve-got-mail-clipart.png'
                         },
                         
                     ]
@@ -56,7 +55,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'calender.jpg'
+                            image: 'https://www.pinclipart.com/picdir/big/520-5203533_checklist-clipart.png'
                         },
                         
                     ]

@@ -1,7 +1,6 @@
 import React from "react";
 import './BoardBar.scss';
-import dashboard from '../../assets/dashboard.png'
-
+import dashboard from '../assets/dashboard.png';
 const BoardBar = () => {
     return (
         <>
