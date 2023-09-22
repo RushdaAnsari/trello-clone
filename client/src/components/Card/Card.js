@@ -17,7 +17,7 @@ const Card = (props) => {
                 {card.image &&
                     <img className='card-cover' 
                     src={card.image} 
-                    style={{width: '120px', transform: 'translate(50px, 0%)', height: 'auto'}}
+                    style={{width: '120px', height: 'auto', transform: 'translate(50px, 0%)'}}
                         onMouseDown={event => event.preventDefault()}
                     />
                 }

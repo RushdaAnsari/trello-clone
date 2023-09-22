@@ -4,6 +4,7 @@ export const initData = {
         {
             id: 'board-1',
             columnOrder: ['column-1', 'column-2', 'column-3', 'column-4'],
+            
             columns: [
                 {
                     id: 'column-1',
@@ -35,7 +36,7 @@ export const initData = {
                     cardOrder: ['card-8', 'card-9', 'card-10'],
                     cards: [
                         {
-                            id: 'card-8', 
+                            id: 'card-3', 
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
@@ -51,7 +52,7 @@ export const initData = {
                     cardOrder: ['card-11', 'card-12', 'card-13'],
                     cards: [
                         {
-                            id: 'card-11', 
+                            id: 'card-4', 
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
@@ -67,3 +68,5 @@ export const initData = {
         }
     ]
 }
+
+
