@@ -24,6 +24,8 @@ https://github.com/RushdaAnsari/trello-clone/assets/108862236/39a97e5c-630e-4ecd
 - html
 - Scss
 - npm
+- Bootstrap 
+- Font awesome
 
 
 
