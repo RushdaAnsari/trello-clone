@@ -1,6 +1,7 @@
 # trello-clone
 
-<img src='https://img.shields.io/static/v1?label=&message=HTML&color=E34F26&style=for-the-badge&logo=HTML5&logoColor=white&logoWidth=&labelColor=&link='/><img src='https://img.shields.io/static/v1?label=&message=SASS&color=CC6699&style=for-the-badge&logo=SASS&logoColor=white&logoWidth=&labelColor=&link=' /><img src='https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=Javascript&logoColor=black&logoWidth=&labelColor=&link='/><img src='https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=REACT&logoColor=61DAFB&labelColor=black&color=black'/>
+<img src='https://img.shields.io/static/v1?label=&message=HTML&color=E34F26&style=for-the-badge&logo=HTML5&logoColor=white&logoWidth=&labelColor=&link='/> <img src='https://img.shields.io/static/v1?label=&message=SASS&color=CC6699&style=for-the-badge&logo=SASS&logoColor=white&logoWidth=&labelColor=&link=' /> <img src='https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=Javascript&logoColor=black&logoWidth=&labelColor=&link='/> <img src='https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=REACT&logoColor=61DAFB&labelColor=black&color=black'/> <img src='https://img.shields.io/static/v1?label=&message=Bootstrap&color=white&style=for-the-badge&logo=BOOTSTRAP&logoColor=7952B3&logoWidth=&labelColor=&link='/> <img src='https://img.shields.io/static/v1?label=&message=fontAwesome&color=D3D3D3&style=for-the-badge&logo=fontAwesome&logoColor=528DD7&logoWidth=&labelColor=&link='/>
+
 
 
 This is a project management kanban board inspired by Trello. This website allow users to manage projects and tasks among different stages of completion.
