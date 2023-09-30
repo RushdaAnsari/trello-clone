@@ -4,7 +4,7 @@
 
 
 
-This is a project management kanban board inspired by Trello. This website allow users to manage projects and tasks among different stages of completion.
+This is the frontend part of the project management app called Trello. This website allow users to manage projects and tasks among different stages of completion.
 
 [View Live Demo](https://rushdaansari.github.io/trello-clone/)
 
