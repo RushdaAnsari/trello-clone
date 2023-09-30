@@ -6,7 +6,7 @@
     margin: 0 $gap $gap;
     gap: 10px;
     overflow-x: auto;
-   
+   margin-top: 40px;
 
     &::-webkit-scrollbar{
         -webkit-appearance: none;
@@ -45,8 +45,8 @@
 
         &:hover {
             color: #fff;
-            background-color: #198754;
-            border-color: #198754;
+            background-color: black
+            //border-color: #198754;
         }
     }
 

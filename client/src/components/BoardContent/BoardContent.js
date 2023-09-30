@@ -101,7 +101,7 @@ const BoardContent = () => {
     if(_.isEmpty(board)){
         return (
             <>
-                <div className='not-found'>Board not found</div>
+                <div className='not-found'>List not found</div>
             </>
         )
     }
@@ -174,7 +174,7 @@ const BoardContent = () => {
                     {isShowAddBoard === false ?
                         <div className='add-new-column' onClick={() => setIsShowAddBoard(true)}>
                             <i className='fa fa-plus icon'>
-                            </i>Create New Board
+                            </i>Create New List
                         </div>
                         :
                     
@@ -185,14 +185,14 @@ const BoardContent = () => {
                                 ref={inputRef}
                                 value={valueInput}
                                 spellCheck='false'
-                                placeholder='Enter Board Title...'
+                                placeholder='Enter List Title...'
                                 onKeyDown={handleKeyDown}
                                 onChange={(event) => setValueInput(event.target.value)}
                                 />
                             <div className='group-btn'>
-                                <button className='btn btn-success' 
+                                <button className='btn btn-secondary' 
                                 onClick={() => handleAddBoard()}
-                                >Create Board</button>
+                                >Create List</button>
                                 <i className='fa fa-times icon' 
                                 onClick={() => setIsShowAddBoard(false)}></i>
                             </div>

@@ -1,3 +1,7 @@
+import calander from '../assets/calender.jpg';
+import mail from '../assets/mail.jpg';
+import checklist from '../assets/checklist.jpg';
+
 
 export const initData = {
     boards: [
@@ -17,13 +21,13 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'https://www.pinclipart.com/picdir/big/553-5532290_calender-clip-art.png'
+                            image: calander
                         },
                         {
                             id: 'card-2', 
                             boardId: 'board',
                             columnId: 'column',
-                            title: 'Create your first task...',
+                            title: 'Add your first card...',
                             image: ''
                         },
                         
@@ -40,7 +44,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'https://www.pinclipart.com/picdir/big/573-5733082_youve-got-mail-clipart.png'
+                            image: mail
                         },
                         
                     ]
@@ -56,7 +60,7 @@ export const initData = {
                             boardId: 'board',
                             columnId: 'column',
                             title: '',
-                            image: 'https://www.pinclipart.com/picdir/big/520-5203533_checklist-clipart.png'
+                            image: checklist
                         },
                         
                     ]

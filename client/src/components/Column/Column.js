@@ -196,10 +196,10 @@ const Column = (props) => {
                         </textarea>
                         <div className='group-btn'>
                             <button 
-                            className='btn btn-success'
+                            className='btn btn-secondary'
                             onClick={() => handleAddNewCard()}
 
-                            > Add Task</button>
+                            > Add card</button>
                             <i className='fa fa-times icon'
                             onClick={() => setIsShowAddNewCard(false)}
                             >
@@ -216,7 +216,7 @@ const Column = (props) => {
                             <i 
                             className='fa fa-plus icon' 
                             >
-                            </i>Create New Task
+                            </i>Add a card
                         </div>
                     </footer>
                 }

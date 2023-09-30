@@ -6,20 +6,20 @@
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    background-color: $navbar-title-bg-color;
+    background: linear-gradient(217deg,rgb(15, 218, 228), rgb(71, 82, 210));
     color: white;
     font-weight: bold;
     font-family: 'Roboto Slab', sans-serif;
     padding: 6px;
     position: fixed;
     width: 100%;
-    
+   
     
 }
 
 .logo{
-    width: 40px;
+    width: 25px;
     height: auto;
-    padding: 3px;
+    margin-right: 10px;
     
 }

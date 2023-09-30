@@ -1,13 +1,13 @@
 import  React from 'react';
 import './AppBar.scss';
-import logo from '../assets/logo.png';
+import logo from '../assets/dashboard.png';
 
 const AppBar = () => {
     return (
         <>
             <nav className="navbar-app">
                 <img className='logo' alt='logo' src={logo}/>
-            Task Flow</nav>
+            Trello Clone</nav>
         </>
     )
 
