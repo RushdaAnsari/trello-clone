@@ -8,9 +8,8 @@ This is a project management kanban board inspired by Trello. This website allow
 
 [View Live Demo](https://rushdaansari.github.io/trello-clone/)
 
-![taskflow](https://github.com/RushdaAnsari/trello-clone/assets/108862236/34753592-a9ec-4766-87ab-0ef0a3a93b99)
+![trello-clone-capture](https://github.com/RushdaAnsari/trello-clone/assets/108862236/10b8d1b4-3a7f-4cc1-bb7e-14c1fbe13a44)
 
-https://github.com/RushdaAnsari/trello-clone/assets/108862236/39a97e5c-630e-4ecd-8b03-b98aa31a1af7
 
 # Features
 - Create Boards and add tasks.
