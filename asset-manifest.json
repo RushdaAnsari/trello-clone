@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trello-clone/static/css/main.c70eb3fe.css",
-    "main.js": "/trello-clone/static/js/main.989cdff2.js",
+    "main.css": "/trello-clone/static/css/main.c4b4c096.css",
+    "main.js": "/trello-clone/static/js/main.670c7ce0.js",
     "static/js/787.28cb0dcd.chunk.js": "/trello-clone/static/js/787.28cb0dcd.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/trello-clone/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/trello-clone/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -13,12 +13,12 @@
     "static/media/mail.jpg": "/trello-clone/static/media/mail.43dbcaa9c0bc938f3a56.jpg",
     "static/media/dashboard.png": "/trello-clone/static/media/dashboard.cc03ce2757950bc9372a.png",
     "index.html": "/trello-clone/index.html",
-    "main.c70eb3fe.css.map": "/trello-clone/static/css/main.c70eb3fe.css.map",
-    "main.989cdff2.js.map": "/trello-clone/static/js/main.989cdff2.js.map",
+    "main.c4b4c096.css.map": "/trello-clone/static/css/main.c4b4c096.css.map",
+    "main.670c7ce0.js.map": "/trello-clone/static/js/main.670c7ce0.js.map",
     "787.28cb0dcd.chunk.js.map": "/trello-clone/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c70eb3fe.css",
-    "static/js/main.989cdff2.js"
+    "static/css/main.c4b4c096.css",
+    "static/js/main.670c7ce0.js"
   ]
 }
