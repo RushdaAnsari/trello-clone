@@ -11,21 +11,26 @@ This is the frontend part of the project management app called Trello. This webs
 ![trello-clone-capture](https://github.com/RushdaAnsari/trello-clone/assets/108862236/10b8d1b4-3a7f-4cc1-bb7e-14c1fbe13a44)
 
 
+https://github.com/RushdaAnsari/trello-clone/assets/108862236/2fbdac41-39d7-4483-b2bc-2f5f4600bfd9
+
+
+
 # Features
-- Create Boards and add tasks.
-- Drag and drop tasks from one board to another.
-- Re-arrange boards by dragging and dropping.
-- Delete boards and tasks when done.
-- Edit title of boards.
+- Create lists and add cards.
+- Drag and drop cards from one list to another.
+- Re-arrange lists by dragging and dropping.
+- Edit title of lists.
+- Delete lists and cards.
+
 
 # Built Using 
 - React js
 - javascript
 - html
-- Scss
+- Sass
 - npm
 - Bootstrap 
-- Font awesome
+
 
 
 
