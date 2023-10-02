@@ -2,6 +2,10 @@
 
 
 .column{
+    // display: flex;
+    // flex-direction: column;
+    // // flex: 0 0 auto;
+    // width: 95%;
     flex: 0 0 auto;
     width: 280px;
     height: calc(100% - #{$gap});
@@ -35,6 +39,7 @@
         display: flex;
         align-items: center;
         padding: 2px 5px;
+        gap: 40px;
 
         .column-title{
             width: 90%;
@@ -129,18 +134,19 @@
         margin: 0;
         max-height: 60vh;
         overflow-y: auto;
+        
 
         &::-webkit-scrollbar{
             -webkit-appearance: none;
         }
     
         &::-webkit-scrollbar:vertical{
-            width: 4px;
+            width: 2px;
         }
     
         &::-webkit-scrollbar-thumb{
             background-color: grey;
-            border-radius: 8px;
+            border-radius: 2px;
             background-clip: padding-box;
         } 
 
@@ -165,3 +171,4 @@
     }   
 
 
+   
